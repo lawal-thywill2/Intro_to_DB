@@ -50,7 +50,7 @@ DROP TABLE IF EXISTS books;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE Books (
   book_id int NOT NULL AUTO_INCREMENT,
-  tittle varchar(130) NOT NULL,
+  title varchar(130) NOT NULL,
   author_id int DEFAULT NULL,
   price double DEFAULT NULL,
   publication_date date DEFAULT NULL,
