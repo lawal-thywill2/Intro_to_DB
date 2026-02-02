@@ -103,15 +103,15 @@ DROP TABLE IF EXISTS order_details;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE Order_Details (
-  orderdetailid int NOT NULL AUTO_INCREMENT,
-  order_id int DEFAULT NULL,
-  book_id int DEFAULT NULL,
-  quantity double DEFAULT NULL,
+  orderdetailid INT NOT NULL AUTO_INCREMENT,
+  order_id INT DEFAULT NULL,
+  book_id INT DEFAULT NULL,
+  quantity DOUBLE DEFAULT NULL,
   PRIMARY KEY (orderdetailid),
   KEY order_id (order_id),
   KEY book_id (book_id),
-  CONSTRAINT order_details_ibfk_1 FOREIGN KEY (order_id) REFERENCES orders (order_id),
-  CONSTRAINT order_details_ibfk_2 FOREIGN KEY (book_id) REFERENCES books (book_id)
+  CONSTRAINT order_details_ibfk_1 FOREIGN KEY (order_id) REFERENCES Orders(order_id),
+  CONSTRAINT order_details_ibfk_2 FOREIGN KEY (book_id) REFERENCES Books(book_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
