@@ -1,10 +1,11 @@
+CREATE DATABASE IF NOT EXISTS `alx_book_store`
+USE `alx_book_store`;
 -- MySQL dump 10.13  Distrib 8.0.45, for Win64 (x86_64)
 --
 -- Host: localhost    Database: alx_book_store
 -- ------------------------------------------------------
 -- Server version	8.0.45
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `alx_book_store` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */;
-USE `alx_book_store`;
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
