@@ -25,7 +25,7 @@ USE alx_book_store;
 DROP TABLE IF EXISTS authors;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE authors (
+CREATE TABLE Authors (
   author_id int NOT NULL AUTO_INCREMENT,
   author_name varchar(215) NOT NULL,
   PRIMARY KEY (author_id)
@@ -48,7 +48,7 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS books;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE books (
+CREATE TABLE Books (
   book_id int NOT NULL AUTO_INCREMENT,
   tittle varchar(130) NOT NULL,
   author_id int DEFAULT NULL,
@@ -76,7 +76,7 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS customers;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE customers (
+CREATE TABLE Customers (
   customer_id int NOT NULL AUTO_INCREMENT,
   customer_name varchar(215) NOT NULL,
   email varchar(215) DEFAULT NULL,
@@ -102,7 +102,7 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS order_details;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE order_details (
+CREATE TABLE Order_Details (
   orderdetailid int NOT NULL AUTO_INCREMENT,
   order_id int DEFAULT NULL,
   book_id int DEFAULT NULL,
@@ -131,7 +131,7 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS orders;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE orders (
+CREATE TABLE Orders (
   order_id int NOT NULL AUTO_INCREMENT,
   customer_id int DEFAULT NULL,
   order_date date DEFAULT NULL,
